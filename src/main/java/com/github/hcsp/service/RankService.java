@@ -13,7 +13,7 @@ public class RankService {
     @Inject
     private RankDao rankDao;
 
-    @MyCache(durationSeconds = 2)
+    @MyCache(durationSeconds = 1)
     public List<RankItem> getRank() {
         return rankDao.getRank();
     }
